@@ -14,7 +14,7 @@ class Program
 
         // Navigate to the Panopto page
         driver.Navigate().GoToUrl("https://imperial.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID=%225da68cca-8d91-444d-a1e4-e09ff92145cc%22");
-
+/* Need the wait function here to allow all the elements to load in */
         // Find all elements with class "subfolder-item"
         var subfolderItems = driver.FindElements(By.CssSelector(".subfolder-item"));
 
